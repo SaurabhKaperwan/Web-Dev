@@ -1,0 +1,85 @@
+API(Application Programming Interface):
+---------------------------------------
+set of commands, functions, protocols, and objects that we can use
+to create S/W or interact with an extrenal system.
+
+Endpoint:
+---------
+It is a URL or URI(Uniform Resorce Identifier) that an API exposes to allow
+communication with other S/W.
+
+It represent a specific function or resource in a web service.
+
+When u make a request to an API, u typically use the API endpoint to
+specify the operation u want to perform or the data u want to retrieve.
+
+API Path/ Params:
+------------------
+
+To get specific data:
+
+
+api-endpoint/path
+
+api-endpoint/path?contains=params
+api-endpoint/path?contains=params1&type=params2
+
+contains and type are keys and params are value.
+
+API Authentication:
+-------------------
+
+To check how often a specific user is using an api.
+
+Every user have a secret and particular key
+
+api-endpoint?appid=key
+
+
+Postman:
+--------
+Testing an API with browser is very difficult when
+number of params increases.
+
+Therefore we use Postman application.
+
+JSON(JavaScript Object Notation):
+---------------------------------
+lightweight and text based data interchange format
+
+Easy to read and write, and simple for machines
+to parse and generate.
+
+Consists of key-value pairs
+
+JSON.stringfy() => converts a JS object into a JSON string.
+
+JSON.parse() => converts a JSON string into a JS object
+
+In JS:
+------
+var obj = {
+    doors: 2,
+    color: "red"
+}
+
+JSON:
+-----
+{"doors":2, "color": "red"}
+
+
+To make a http get request to extrenal server node:
+----------------------------------------------------
+u can use :
+axios package, request package(Not work now), https native package
+
+We are using https package
+
+Https response status code:
+---------------------------
+Informational Response(100-199)
+Successful Response(200-299)
+Redirects(300-399)
+Client Errors(400-499)
+Server Errors(500-599)
+
