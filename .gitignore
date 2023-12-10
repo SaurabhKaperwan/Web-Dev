@@ -1,4 +1,4 @@
-my-express-server/node_modules
-API/WeatherProject/node_modules
-API/Newsletter-Signup/node_modules
+my-express-server/node_modules/
+API/WeatherProject/node_modules/
+API/Newsletter-Signup/node_modules/
 .env
