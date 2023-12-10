@@ -1,0 +1,31 @@
+It is a framework for node.
+It is a npm package.
+
+Install and Save it in depedency list(in package.json):
+npm install express --save
+
+Not save in depedency list:
+npm install express --nosave
+
+Nodemon:
+--------
+When u get tired of restarting the server whenever u make some changes.
+
+install:
+npm install -g nodemon
+
+to run server:
+nodemon server.js
+
+body-parser:
+------------
+
+npm install body-parser
+used to parse the info we get from post request
+body-parser works with express
+
+app.use(bodyParser.urlencoded({extended: true}));
+
+urlencoded used when we send html
+
+extended => it allows us to post nested objects
