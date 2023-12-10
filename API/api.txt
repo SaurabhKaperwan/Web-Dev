@@ -83,3 +83,17 @@ Redirects(300-399)
 Client Errors(400-499)
 Server Errors(500-599)
 
+Hide API Key:
+-------------
+
+1.create filr .env
+API_KEY = ur_api_key;
+
+2.npm i dotenv
+
+3.load enviromental variables and configure dotenv to load the variables
+from the .env file
+require('dotenv').config();
+
+4.Access api key
+const apiKey = process.env.API_KEY;
