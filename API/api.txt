@@ -97,3 +97,8 @@ require('dotenv').config();
 
 4.Access api key
 const apiKey = process.env.API_KEY;
+
+
+To post data to external resource:
+-----------------------------------
+
