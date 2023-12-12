@@ -1,0 +1,15 @@
+Types of db:
+
+SQL(Relational) and NoSQL(Non Relational)
+
+MySQL                          MongoDB
+----------------------------------------------------------
+More mature                    Shiny and New
+
+Table Structure                Document Structure
+
+Require a Schema                More Flexible to changes
+
+Great with Relationships        Not great
+
+Scales Vertically               Horizontally Sclable

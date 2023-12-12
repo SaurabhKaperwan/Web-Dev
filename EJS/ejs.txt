@@ -1,0 +1,61 @@
+Template:
+
+Template engines, or templating, refer to a method for generating dynamic content by combining predefined templates with data. In the context of web
+development, templating is often used to generate HTML pages dynamically on the server side.
+
+We r using EJS => Embedded Javascript Templating
+
+EJS is a templating language that lets you embed JavaScript code within your HTML templates.
+It is often used with Node.js to dynamically generate HTML content on the server side
+
+app.js
+------
+
+const express = require('express');
+const app = express();
+const port = 3000;
+
+// Set EJS as the view engine
+app.set('view engine', 'ejs');
+
+// Define a route
+app.get('/', (req, res) => {
+  // Render an EJS template
+  res.render('index', { title: 'Hello, EJS!' });
+});
+
+// Start the server
+app.listen(port, () => {
+  console.log(`Server is listening on port ${port}`);
+});
+
+
+Create a folder named "views" in your project directory.
+Inside this folder, create an EJS template file (e.g., index.ejs) with the following content:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+</head>
+<body>
+  <h1><%= title %></h1>
+</body>
+</html>
+
+<%= title %> => print value of key named title
+
+Their r many tags in ejs:
+
+<%=    => outputs the value into the template
+
+<%    =>  Scriptlet tag for control flow, no output, works line in line basis
+eg:
+
+<% if(kindOfDay == "weekend") { %>
+        <h1 style="color: purple">It's a <%= kindOfDay %> !</h1>
+  <%  } else { %>
+        <h1 style="color: blue">It's a <%= kindOfDay %> !</h1>
+    <% } %>
